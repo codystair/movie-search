@@ -16,7 +16,7 @@ class App extends Component {
 
   handleSubmit(event) {
     const key = "a932735c";
-    const apiUrl = `http://www.omdbapi.com/?apikey=${key}&s=`;
+    const apiUrl = `https://www.omdbapi.com/?apikey=${key}&s=`;
     fetch(apiUrl + this.state.inputValue)
       .then((response) => response.json())
       .then((data) => {
@@ -37,6 +37,7 @@ class App extends Component {
 
     return (
       <div>
+        <h1>Find a Movie!</h1>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="search">Search by title </label>
           <input
