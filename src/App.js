@@ -37,6 +37,7 @@ class App extends Component {
 
     return (
       <div>
+        <h1>Find a Movie!</h1>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="search">Search by title </label>
           <input
